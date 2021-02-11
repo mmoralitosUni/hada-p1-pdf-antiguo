@@ -20,4 +20,4 @@ Al sincronizar el repositorio local con el remoto ya se pueden ver los cambios e
 'Hacer cambios staged e insertar' quiere decir guardar los cambios en local y subirlos al remoto  Su comando equivalente seria 'git add * && git commit -m "$(MSG)" && git stash && git push -u origin master'
 
 ## P6:
-'Hacer cambios staged y sincronizar' quiere decir guardar los cambios en local y hacer iguales los dos repositorios  Su comando equivalente seria 'git add * && git commit -m "$(MSG)" && git stash && git pull && git push -u origin master'
+'Hacer cambios staged y sincronizar' quiere decir guardar los cambios en local y hacer iguales los dos repositorios  Su comando equivalente seria 'git add * && git commit -m "$(MSG)" && git stash && git pull && git fetch -u origin master'
