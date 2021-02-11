@@ -26,8 +26,25 @@ namespace hada_p1
         /// </summary>
         /// <param name="m"> minutos a ser convertidos en segundos </param>
         /// <returns> Devuelve un doble con el contenido de la conversion </returns>
-        public static double Minutes2Seconds(double m)
-        {
+        public static double Minutes2Seconds(double m){
+            return ( m == 0 ? 0 : ( m * 60.0 ) );
+        }
+
+        /// <summary>
+        /// Convierte de horas a minutos
+        /// </summary>
+        /// <param name="h"> horas a ser convertidas en minutos </param>
+        /// <returns> Devuelve un doble con el contenido de la conversion </returns>
+        public static double Hours2Minutes(double h) {
+            return ( h == 0 ? 0 : ( h * 60.0) );
+        }
+
+        /// <summary>
+        /// Convierte de minutos a horas
+        /// </summary>
+        /// <param name="m"> minutos a ser convertidos en horas </param>
+        /// <returns> Devuelve un doble con el contenido de la conversion </returns>
+        public static double Minutes2Hours(double m) {
             return ( m == 0 ? 0 : ( m / 60.0 ) );
         }
     }

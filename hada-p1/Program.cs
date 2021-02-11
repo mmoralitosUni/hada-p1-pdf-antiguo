@@ -16,7 +16,7 @@ namespace hada_p1
         }
         static void Main(string[] args)
         {
-            init: printf("Que unidad desea convertir? [s=Segundos | m=Minutos | q=Salir] :  ");
+            init: printf("Que unidad desea convertir? [s=SegundosAMinutos | m=MinutosASegundos | h=HorasAMinutos | q=Salir] :  ");
             string opt = scanf().ToLower();
             printf("Inserte la cantidad a convertir:  ");
             switch (opt)
@@ -26,6 +26,9 @@ namespace hada_p1
                     break;
                 case "m":
                     printf(HadaP1.Minutes2Seconds(Convert.ToDouble(scanf())));
+                    break;
+                case "h":
+                    printf(HadaP1.Hours2Minutes(Convert.ToDouble(scanf())));
                     break;
                 case "q":
                     goto kill;
