@@ -9,7 +9,7 @@ namespace hada_p1
     class HadaP1
     {
         public static double Seconds2Minutes(double s) {
-            return s / 60.0;
+            return ( s==0 ? 0 : ( s / 60.0 ) );
         }
     }
 }
