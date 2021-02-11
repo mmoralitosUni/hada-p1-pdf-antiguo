@@ -10,7 +10,7 @@ namespace hada_p1
     /// Esta clase contiene metodos para convertir de
     /// segundos a minutos y viceversa
     /// </summary>
-    class HadaP1
+    class HadaP1 
     {
         /// <summary>
         /// Metodo que convierte segundos a minutos
